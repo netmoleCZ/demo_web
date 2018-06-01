@@ -6,37 +6,35 @@ import Link from 'gatsby-link'
 
 const NavBar = () => {
   return (
-    <nav className='navbar is-fixed-top' aria-label='main navigation'>
-      <div className='navbar-brand'>
-        <Link to='/' className='navbar-item'>
-                    Demo web by netmoleCZ
+    <nav className="navbar is-fixed-top" aria-label="main navigation">
+      <div className="navbar-brand">
+        <Link to="/" className="navbar-item">
+          Demo web by netmoleCZ
         </Link>
-        <button className='button navbar-burger' data-target='navMenu'>
+        <button className="button navbar-burger" data-target="navMenu">
           <span />
           <span />
           <span />
         </button>
       </div>
-      <div className='navbar-menu' id='navMenu'>
-        <div className='navbar-start'>
-          <Link className='navbar-item' to='/pricing'>
-                        Ceny Služeb
+      <div className="navbar-menu" id="navMenu">
+        <div className="navbar-start">
+          <Link className="navbar-item" to="/pricing">
+            Ceny Služeb
           </Link>
-          <Link className='navbar-item' to='/about'>
-                        O firmě
+          <Link className="navbar-item" to="/about">
+            O firmě
           </Link>
-          <Link className='navbar-item' to='/blog'>
-                        Blog
+          <Link className="navbar-item" to="/blog">
+            Blog
           </Link>
         </div>
-        <div className='navbar-end'>
-          <div className='navbar-item'>
-            <div className='field is-grouped'>
-              <p className='control'>
-                <Link
-                  className='button is-primary is-outlined'
-                  to='/contact'>
-                                    Kontaktujte mě
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <div className="field is-grouped">
+              <p className="control">
+                <Link className="button is-primary is-outlined" to="/contact">
+                  Kontaktujte mě
                 </Link>
               </p>
             </div>

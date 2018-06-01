@@ -9,11 +9,11 @@ import Footer from '../components/Footer'
 import './styles.sass'
 import config from '../../meta/config'
 
-const TemplateWrapper = ({children}) => (
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet>
       <title>{config.siteTitle}</title>
-      <meta name='description' content={config.siteDescription} />
+      <meta name="description" content={config.siteDescription} />
     </Helmet>
     <NavBar />
     <div>{children()}</div>

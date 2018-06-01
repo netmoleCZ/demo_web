@@ -4,11 +4,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Testimonials = ({testimonials}) => (
+const Testimonials = ({ testimonials }) => (
   <div>
     {testimonials.map((testimonial, id) => (
-      <article className='message' key={id}>
-        <div className='message-body'>
+      <article className="message" key={id}>
+        <div className="message-body">
           {testimonial.quote}
           <br />
           <cite> – {testimonial.author}</cite>

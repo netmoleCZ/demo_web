@@ -19,38 +19,37 @@ export const HomePageTemplate = ({
   <div>
     <Helmet>
       <title>{meta_title}</title>
-      <meta name='description' content={meta_description} />
+      <meta name="description" content={meta_description} />
     </Helmet>
-    <section className='hero is-primary is-bold'>
-      <div className='hero-body'>
-        <div className='container'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section'>
-                <h1 className='title'>
-                  {title}
-                </h1>
+    <section className="hero is-primary is-bold">
+      <div className="hero-body">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="section">
+                <h1 className="title">{title}</h1>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section className='section section--gradient'>
-      <div className='container'>
-
-        <div className='section'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='content'>
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="section">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="content">
                 <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
+                  <h3 className="has-text-weight-semibold is-size-2">
                     {heading}
                   </h3>
                   <p>{description}</p>
                 </div>
                 <Offerings gridItems={offerings.blurbs} />
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
+                <h2 className="has-text-weight-semibold is-size-2">
+                  Testimonials
+                </h2>
                 <Testimonials testimonials={testimonials} />
               </div>
             </div>
@@ -71,11 +70,10 @@ HomePageTemplate.propTypes = {
     blurbs: PropTypes.array,
   }),
   testimonials: PropTypes.array,
-
 }
 
-const HomePage = ({data}) => {
-  const {frontmatter} = data.markdownRemark
+const HomePage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
 
   return (
     <HomePageTemplate
