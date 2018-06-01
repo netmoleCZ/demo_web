@@ -100,7 +100,7 @@ module.exports = {
         setup (ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata
           ret.allMarkdownRemark = ref.query.allMarkdownRemark
-          ret.generator = 'GatsbyJS Business Starter'
+          ret.generator = 'by netmoleCZ'
           return ret
         },
         query: `
@@ -169,4 +169,3 @@ module.exports = {
     'gatsby-plugin-netlify',
   ],
 }
-

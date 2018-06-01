@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
-title: O mě
-meta_title: O mě |  Demo 
+title: O firmě
+meta_title: O firmě |  Demo
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
